@@ -1,0 +1,38 @@
+body{
+
+    background-image:url("images/hero-bg.jpg");
+    /*  background-color: tomato;
+     background-image:url("images/hero-bg.jpg");
+     background-image:url("images/montain1.jpg");
+    background-color: #670d6c;*/
+    background-size: 1350px;
+    background-repeat: inherit;
+}
+.mynav li a:hover{
+    border:1px solid;
+    border-radius:587px;
+    background-color: #3768f5;
+    font-size: 22px;
+    color: white;
+}
+.list-group a:hover{
+   font-size: 18px;
+}
+.panel-title a:hover{
+    font-size: 18px;
+}
+
+div .thank{
+    border:solid;
+    width:10%;
+    margin:auto;
+    position:fixed;
+    bottom:-200px;
+    left:500px;
+    padding:15px;
+    font-size:24px
+
+}
+#cloth,#mobile,#elect{
+    display:none
+}

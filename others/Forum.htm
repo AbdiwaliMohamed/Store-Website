@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<div lang="en">
+<head>
+  <title>fourm</title>
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="jquery.min.js"></script>
+  <script src="bootstrap.min.js"></script>
+  <script>
+      $(document).ready(function () {
+      $('button').click(function (e) {
+
+              e.preventDefault()
+                var list = $("#x")
+              name=   $('input:first').val()
+              age=  $('input:eq(1)').val()
+              img= $('input:last').val()
+              Comment  = $('#Comment').val()
+
+              var   list_item = "<li class='list-group-item well'><div class='media'><div class='media-body'><h3 class='media-object'>"
+                  + title +"</h3><p class='media-object'>" + Comment +"</p></div><div class='media-right' ><div class=\"media-right\">\n" + 
+                  "<p class='media-object'>"+"" +name +"</p><p class='media-object'>"+"age:"+age +"</p></div></div></li>"
+
+              if(name && age && title && Comment!=null){
+                  list.append(list_item)
+
+
+                  $('input:first').val("")
+                  $('input:eq(1)').val("")
+                  $('input:eq(2)').val("")
+                  $('input:last').val("")
+                  Comment= $('#Comment').val("")
+
+              }
+
+          })
+
+      })
+
+
+  </script>
+</head>
+
+
+  <body>
+    
+<div class="container-fluid">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-header">
+                <button class="navbar-toggle" data-toggle="collapse" data-target="#myid1">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            <div id="logo" class="pull-left">
+                <a href="#" class="navbar-brand" style="font-size:27px;  color: #d85d16;">
+                    BRIGHT GROUP</a>
+            </div>
+            </div>
+            <div id="myid1" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav" style=" background:#1b2125; color:#ffffffd5;">
+                    <li><a href="Home.html" style="font-size:20px">Home</a></li>
+                    <li><a href="new store.html" style="font-size:20px">Store</a></li>
+                    <li><a href="forum.html" style="font-size:20px">Fourm</a></li>
+                    <li><a href="contact_form.html" style="font-size:20px">Contact Us</a></li>
+                  </ul>
+               </div>
+    </nav>
+</div>
+
+  <div class="container">
+  <ul id="x" class="list-group well">
+    <li class="list-group-item well">
+      <div class="media">
+        <div class="media-body">
+          <h3 class="media-object">HTML</h3>
+          <p class="media-object">
+              About the only thing you can be sure of when you’re designing web pages with 
+              basic HTML is that you have two fonts to work with:<br> a proportional font, and a
+              fixed-width font. The problem is that you don’t know specifically which ones or at
+        
+             </p>
+        </div>
+
+        <div class="media-right">
+          <img src="images/male.png"  style="width:80px" class="media-object">
+          <p class="media-object">Abdiwali</p>
+          <p class="media-object">Age : 22</p>
+        </div>
+      </div>
+    </li>
+
+    <li class="list-group-item well">
+      <div class="media">
+        <div class="media-body">
+          <h3 class="media-object">JAVASCRIPT</h3>
+          <p class="media-object">
+              About the only thing you can be sure of when you’re designing web pages with 
+              basic HTML is that you have two fonts to work with:<br> a proportional font, and a
+              fixed-width font. The problem is that you don’t know specifically which ones or at
+        
+             </p>
+        </div>
+        <div class="media-right">
+          <img src="images/female.png"  style="width:80px" class="media-object">
+          <p class="media-object">Aisha</p>
+          <p class="media-object">Age : 22</p>
+        </div>
+      </div>
+    </li>
+  </ul>
+  </div>
+  <br>
+    <div class="container">
+<form class=" well form-horizontal">
+        <div class="form-group">
+          <label class="col-xs-2 control-label">Name:</label>
+          <div class="col-xs-10">
+            <input type="text" class="form-control">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-xs-2 control-label">Age:</label>
+          <div class="col-xs-10">
+            <input type="number" class="form-control">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-xs-2 control-label">Title:</label>
+          <div class="col-xs-10">
+            <input type="text" class="form-control">
+          </div>
+
+        </div>
+        <div class="form-group">
+          <label class="col-xs-2 control-label">Comment:</label>
+          <div class="col-xs-10">
+            <textarea id="Comment"class="form-control"> </textarea>
+             <br> <button class=" btn btn-success">Add Now</button>
+          </div>
+        </div>
+      </div>
+</form>
+</div>
+</body>
+</html>
